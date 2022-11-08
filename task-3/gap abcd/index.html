@@ -11,9 +11,17 @@
 <script>
   
   for(i=65; i<=73; i++){
-    for(j=65)
+    for(j=73;j>=i;j--){
+	document.write("&nbsp");
   }
-
+   for (k=65;k<=i;k++){
+       if (i%2==0){
+	      continue;
+		  }
+		document.write(String.fromCharCode(k));
+		}
+		document.write("<br>");
+		}
 </script>
 </body>
 </html>
