@@ -1,0 +1,76 @@
+<!DOCUMENT html>
+<html>
+<head>
+     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <style>
+    .form{
+	  width:25%;
+	  background-color:#f1c6c6;
+	  padding-bottom:15px;
+	  margin:10% auto;
+	  padding:50px;
+	  }
+	 h2{
+	 text-align:center;
+	 }
+	 .hed-1{
+	 padding-top:10px;
+	 padding-bottom:5px;
+	 margin:31px auto;
+	 border-bottom:1px solid #fff;
+	 }
+	 input{
+	   height:30px;
+	   width:100%;
+	   border:none;
+	   outline:none;
+	   background-color:transparent;
+	   }
+	 span{
+	 position:absolute;
+	 bottom: 15rem;
+	 right:33rem;
+	 }
+	 #i-1{
+	  display:none;
+	  }
+	 iconify-icon{
+	   font-size:20px;
+	   }
+	</style>
+</head>
+<body>
+     <div class="form">
+	    <h2>Login</h2>
+	    <div class="hed-1">
+	     <input type="text" placeholder="Username">
+		</div>
+		<div class="hed-1"> 	
+		 <input id="ininput" type="password" placeholder="password" >
+		 <span onclick="myFunction()">
+		   <iconify-icon id="i-1" icon="ic:baseline-remove-red-eye"></iconify-icon>
+		   <iconify-icon id="i-2" icon="mdi:eye-off"></iconify-icon>
+		  </span>
+		</div>
+	 </div>
+	 <script>
+	      function myFunction(){
+		    var x=document.getElementById("ininput");
+			var y=document.getElementById("i-1");
+			var z=document.getElementById("i-2");
+			
+			if(x.type === 'password'){
+			   x.type="text";
+			   y.style.display="block";
+			   z.style.display="none";
+			   }
+			else{
+			    x.type="password";
+			   y.style.display="none";
+			   z.style.display="block";
+			   }
+			}
+	  
+	 </script>
+</body>
+</html>
