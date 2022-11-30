@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            let mymodel= prompt("enter select your object");
+            let array={};
+            let k;
+            
+            function value(mymodel){
+            for(i=0;i<mymodel;i++){
+            k={
+                name:"",
+                id:"",
+                number:"",
+            }
+             var p1=prompt("enter your Name");
+             k.name=p1;
+             var p2=prompt("enter your id");
+             k.id=p2;
+             var p3=prompt("enter your number");
+             k.number=p3;
+
+             array[i]=k;
+            }
+            return(array);
+        }
+            console.log(value(mymodel));
+
+
+        </script>
+    </body>
+</html>
