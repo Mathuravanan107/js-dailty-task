@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            // basic element creaded  //
+            // let header=document.createElement("h1");
+            //  document.body.appendChild(header);
+            //  header.textContent="Mathuravanan";
+            //  console.log(header);
+            //-------------------------------------//
+
+             //  prompt element get  //
+            //  let element=prompt("enter your element");
+            //  let header=document.createElement(element);
+            //  document.body.appendChild(header);
+            //  values=prompt("enter your element values");
+            //  header.innerHTML=values;
+            //------------------------------------//
+
+            // let element=prompt("enter your element");
+            //  let header=document.createElement(element);
+            //  document.body.appendChild(header);
+            //  let values=prompt("enter your element values");
+            //  header.innerHTML=values;
+
+            //  header.setAttribute("style","padding");
+            //  header.style.padding = prompt("enter your element style");
+
+            //-----------------------------------------------//
+
+
+            let element=prompt("enter your element");
+             let header=document.createElement(element);
+             document.body.appendChild(header);
+
+               header.setAttribute("style","background");
+             header.style.background = prompt("enter your element style");
+             
+
+             let element2=prompt("enter your childelement1 element");
+             let now=document.createElement(element2);
+               header.appendChild(now);
+            let values=prompt("enter your element values");
+             now.innerHTML=values;
+
+               now.setAttribute("style","background");
+             now.style.background = prompt("enter your element style");
+            
+            let element3=prompt("enter your childelement2 element");
+             let now2=document.createElement(element3);
+               header.appendChild(now2);
+               let values1=prompt("enter your element values");
+             now2.innerHTML=values1;
+
+               now2.setAttribute("style","background");
+             now2.style.background = prompt("enter your element style");
+        </script>
+    </body>
+</html>
