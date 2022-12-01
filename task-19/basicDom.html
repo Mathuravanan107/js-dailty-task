@@ -4,7 +4,32 @@
 
     </head>
     <body>
+        <h1>Mathi</h1>
+
+        <!-- <input type="password" onclick="chect">
+        <button id="btn">click on</button> -->
+        <div>
+            <label for="">Password</label>
+            <input type="password" id="password">
+            <br>
+            <input type="checkbox" id="Ck" onclick="check()">
+            <label for="">Show Password</label>
+
+        </div>
+
+
         <script>
+
+            function check(){
+                var password= document.getElementById("password");
+                var Check= document.getElementById("Ck");
+                if(Ck.checked){
+                       password.setAttribute("type","text");
+                }
+                else{
+                    password.setAttribute("type","password");
+                }
+            }
             // basic element creaded  //
             // let header=document.createElement("h1");
             //  document.body.appendChild(header);
@@ -32,31 +57,45 @@
             //-----------------------------------------------//
 
 
-            let element=prompt("enter your element");
-             let header=document.createElement(element);
-             document.body.appendChild(header);
+            // let element=prompt("enter your element");
+            //  let header=document.createElement(element);
+            //  document.body.appendChild(header);
 
-               header.setAttribute("style","background");
-             header.style.background = prompt("enter your element style");
+            //    header.setAttribute("style","height");
+            //  header.style.height = prompt("enter your element style");
              
 
-             let element2=prompt("enter your childelement1 element");
-             let now=document.createElement(element2);
-               header.appendChild(now);
-            let values=prompt("enter your element values");
-             now.innerHTML=values;
+            //  let element2=prompt("enter your childelement1 element");
+            //  let now=document.createElement(element2);
+            //    header.appendChild(now);
+            // let values=prompt("enter your element values");
+            //  now.innerHTML=values;
 
-               now.setAttribute("style","background");
-             now.style.background = prompt("enter your element style");
+            //    now.setAttribute("style","background");
+            //  now.style.background = prompt("enter your element style1");
+
             
-            let element3=prompt("enter your childelement2 element");
-             let now2=document.createElement(element3);
-               header.appendChild(now2);
-               let values1=prompt("enter your element values");
-             now2.innerHTML=values1;
+            // let element3=prompt("enter your childelement2 element");
+            //  let now2=document.createElement(element3);
+            //    header.appendChild(now2);
+            //    let values1=prompt("enter your element values");
+            //  now2.innerHTML=values1;
 
-               now2.setAttribute("style","background");
-             now2.style.background = prompt("enter your element style");
+            //    now2.setAttribute("style","background");
+            //  now2.style.background = prompt("enter your element style");
+
+            //------------------------------------------//
+
+
+            // let getelement=document.getElementsByTagName("sum");
+            // getelement[0].type=prompt("enter your element");
+
+
+            //-----------------------------------------//
+
+
+
+
         </script>
     </body>
 </html>
