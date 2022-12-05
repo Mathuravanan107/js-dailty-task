@@ -8,12 +8,41 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="box"></div>
-        <script>
-            function checkbox(){
-                
-            }
-        </script>
-                  
+        <section>
+         <div class="box"></div>
+         
+        </section>
+        <img class="lad1" src="img/ladder1.png">  
+        <img class="snake1" src="img/snake1.png">
+        <img class="snake2" src="img/snake2.png">  
+        <img class="snake3" src="img/snake3.png">
     </body>
+    <script>
+        function createBoxes(){
+            var boxes="";
+        for(let i=0;i<10;i++){
+            for(let j=0;j<10;j++){
+            y=(9-i)*50;
+            x=j*50;
+            if( (i+j)%2==0)
+            {
+                bg="orange";
+            }
+            else{
+                bg="white";
+            }
+            
+            if(i%2==0){
+                n=i*10+j+1;
+            }
+            else{
+                n=i*10+(10-j);
+            }
+            boxes+= `<div class='box' style='margin:${y}px ${x}px;background:${bg};'>${n}</div>`;
+            }
+        }
+        document.querySelector("section").innerHTML=boxes;
+        }
+        createBoxes();
+    </script>
 </html>
