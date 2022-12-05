@@ -13,6 +13,13 @@ section{
     text-align: center;
     font-size: 20px;
 }
+button{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    border-radius: 50%;
+    color:white;
+}
 .lad1{
     width:80px;
     position: absolute;
@@ -37,3 +44,7 @@ section{
     position: absolute;
     top: 10rem;
 }
+
+
+
+
