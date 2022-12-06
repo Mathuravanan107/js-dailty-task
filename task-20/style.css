@@ -27,24 +27,45 @@ button{
     left: 28rem;
 }
 .snake1{
-    left: 20rem;
+    transform: rotate(340deg);
+    left: 38rem;
     width: 120px;
     position: absolute;
-    top: 10rem
+    top: 10rem;
+    height: 20rem;
 }
 .snake2{
-    left: 30rem;
+    left: 31rem;
     width: 120px;
     position: absolute;
-    top: 10rem;
+    top: 19rem;
+    transform: rotate(43deg);
 }
 .snake3{
-    left: 30rem;
+    left: 43rem;
     width: 120px;
     position: absolute;
-    top: 10rem;
+    top: 2rem;
 }
-
-
-
+.lad2{
+    width: 165px;
+    position: absolute;
+    top: 17rem;
+    left: 40rem;
+}
+.snake4{
+    left: 23rem;
+    width: 120px;
+    position: absolute;
+    top: 1.8rem;
+    transform: rotate(352deg);
+    height: 25rem;
+}
+.lad3{
+    width: 114px;
+    position: absolute;
+    top: 2rem;
+    left: 27rem;
+    transform: rotate(350deg)
+}
 

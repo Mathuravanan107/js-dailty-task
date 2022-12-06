@@ -9,11 +9,18 @@
     </head>
     <body>
         <section></section>
-        <div onclick="jump(4)">jump</div>
+        <div onclick="jump(sp)">jump</div>
+        <div onclick="getRandomInt()">Click her</div>
+        <!-- <input type="text" value="0" id="count_id">
+        <input type="button" value="Click Me" id="button_id" onclick="myFunction()"> -->
+
         <img class="lad1" src="img/ladder1.png">  
         <img class="snake1" src="img/snake1.png">
         <img class="snake2" src="img/snake2.png">  
-        <img class="snake3" src="img/snake3.png">
+        <img class="snake3" src="img/snake-3.png">
+        <img class="lad2" src="img/ladder2.png">
+        <img class="snake4" src="img/snake1.png">
+        <img class="lad3" src="img/ladder1.png"> 
     </body>
     <script>
 
@@ -58,5 +65,26 @@
              }
             },1000);
         }
+
+
+
+        function myFunction(){
+	
+            var data = document.getElementById("count_id").value;
+            var  datacount = (parseInt(6));
+            document.getElementById("count_id").value = datacount;	
+            document.getElementById("button_id").value = "Clicked";
+            
+        }
+        setInterval(function(){
+        document.getElementById("button_id").click();	
+        }, 3000);
+
+        function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+            
+        }
+        sp=getRandomInt(7);
+        console.log(sp);
     </script>
 </html>
