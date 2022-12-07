@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <label>Amount:</label><br>
+        <input type="number" id="val1"><br>
+        <label>tips:</label><br>
+        <input type="number" id="val2"><br>
+        <label>tips Amount:</label><br>
+        <input type="number" id="val3"><br>
+        <label>Total:</label><br>
+        <input type="number" id="val4"><br>
+        <button onclick="btn()" id="btn">Click here</button>
+        <script>
+            let cl=document.getElementById("btn");
+             cl.addEventListener("click",totalbill);
+
+             function totalbill(){
+                fir=document.getElementById("val1").value;
+                sec=document.getElementById("val2").value;
+                men=((sec/100)*fir);
+                tal=(parseInt(fir)+parseInt(men));
+                document.getElementById("val3").value=men;
+                document.getElementById("val4").value=tal;
+             }
+
+        </script>
+    </body>
+</html>
