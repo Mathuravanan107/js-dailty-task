@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+      <style>
+        iconify-icon{
+            font-size: 20px;
+        }
+        textarea{
+           width:16rem;
+            height: 6rem;
+        }
+        .blod{
+            display: flex;
+            justify-content: center;
+        }
+        .fir{
+            top:8rem;
+            right:10rem;
+            position: relative;
+        }
+        .sec{
+            top:8rem;
+            left:10rem;
+            position: relative;
+        }
+      </style>
+    </head>
+    <body>
+        <div class="blod">
+            <div class="fir">
+            <h2>Wrtie the text</h2>
+            <textarea type="text" id="get"></textarea><br>
+            <button onclick="Person()" id="btn">click</button>
+            </div>
+            <div class="sec">
+                <h2>paste here </h2>
+                <h2 id="set"></h2>
+                <iconify-icon icon="material-symbols:edit-calendar"></iconify-icon>
+            <iconify-icon icon="material-symbols:delete-outline-sharp"></iconify-icon>
+            </div>
+        </div>
+        <script>
+
+
+             let cl=document.getElementById("btn");
+             cl.addEventListener("click",number);
+
+             function number(){
+                 int=document.getElementById("get").value;
+                 document.getElementById("set").innerHTML=int;
+             }
+            
+            
+        </script>
+    </body>
+</html>
