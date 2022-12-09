@@ -29,27 +29,48 @@
     <body>
         <div class="blod">
             <div class="fir">
-            <h2>Wrtie the text</h2>
-            <textarea type="text" id="get"></textarea><br>
-            <button onclick="Person()" id="btn">click</button>
+            <form class="form">
+                <h2>Wrtie the text</h2>
+                <textarea type="text" id="get"></textarea><br>
+                <button type="submit">click</button>
+            </form>
             </div>
             <div class="sec">
                 <h2>paste here </h2>
-                <h2 id="set"></h2>
-                <iconify-icon icon="material-symbols:edit-calendar"></iconify-icon>
-            <iconify-icon icon="material-symbols:delete-outline-sharp"></iconify-icon>
+                <div id="set">
+
+                </div>
             </div>
         </div>
         <script>
-
-
-             let cl=document.getElementById("btn");
-             cl.addEventListener("click",number);
-
-             function number(){
-                 int=document.getElementById("get").value;
-                 document.getElementById("set").innerHTML=int;
+            let form=document.getElementById("form");
+            let get=document.getElementById("get");
+            let set=document.getElementById("set");
+             form.addEventListener("submit",(e)=>{
+                 e.preventDefault();
+                 readPost();
+             })
+             let data={}
+             let readPost=()=>{
+                 data["text"]=get.value;
+                 console.log(data);
+                 createPost();
              }
+
+             let createPost=()=>{
+                set.innerHTML +=`<div>
+                <p>${data.text}</p>
+                <span class="options">
+                    <iconify-icon icon="material-symbols:edit-calendar"></iconify-icon>
+                    <iconify-icon icon="material-symbols:delete-outline-sharp" onClick="detetePost(this)"></iconify-icon>
+                </span>
+                </div>`
+                get.value="";
+             };
+            let detetePost=(e)=>{
+               e.parentElement.parentElement.remove();
+
+            }
             
             
         </script>
