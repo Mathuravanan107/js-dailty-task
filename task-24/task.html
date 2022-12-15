@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        let age=prompt("Enter the age");
+		let sex=prompt("Enter the sex");
+		let mrg=confirm("select martial status yes click or click cancel");
+		
+		if(sex=="female"){
+			console.log("work in urban only")
+		}
+		else if(sex=="male"){
+			if(age>=20 && age<40){
+			console.log("work in anywhere")
+			}
+			else if(age>=40 && age<=60){
+                
+				console.log("work in urban only")
+			}
+			else{
+				console.log("Error")
+			}
+		}
+        </script>
+    </body>
+</html>
