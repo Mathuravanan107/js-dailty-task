@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+        .col{
+            justify-content: center;
+            align-items: center;
+         }
+      </style>
+    </head>
+    <body>
+          <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                     <label>Name:</label><br>
+                     <input type="text" id="name"><br>
+                     <label>Password:</label><br>
+                     <input type="Password" id="pass"><br>
+                     <button onclick="myfun()">Login In</button>
+                    </div>
+                </div>
+            </div>
+          </section>
+        <script>
+             let rell=document.getElementById("name");
+             let rall=document.getElementById("pass");
+             function myfun(){
+             if(name==""){
+                alert("please enter your name");
+                if(pass==""){
+                alert("please enter your password");
+             }
+             }
+            }   
+        </script>
+    </body>
+</html>
