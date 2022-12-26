@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            //  let month=parseInt(prompt("Enter month number"));
+       
+
+            // switch(month){
+            //     case 1:
+            //         console.log("Jan")
+            //         console.log("31 Days");
+            //     break;
+            //     case 2:
+            //     let one=parseInt(prompt("Enter Year"));
+            //         if(one%4==0){
+            //             console.log(" Leap Year 29 Days " + one);
+            //         }
+            //         else{
+            //             console.log(" Not Leap Year 28 Days " + one);
+            //         }
+            //         console.log("Feb");
+            //     break;
+            //     case 3:
+            //         console.log("Mar");
+            //         console.log("31 Days");
+            //     break;
+            //     case 4:
+            //         console.log("Apr");
+            //         console.log("30 Days");
+            //     break;
+            //     case 5:
+            //         console.log("May");
+            //         console.log("31 Days");
+            //     break;
+            //     case 6:
+            //         console.log("Jun");
+            //         console.log("30 Days");
+            //     break;
+            //     case 7:
+            //         console.log("Jul");
+            //         console.log("31 Days");
+            //     break;
+            //     case 8:
+            //         console.log("Agu");
+            //         console.log("31 Days");
+            //     break;
+            //     case 9:
+            //         console.log("Sep");
+            //         console.log("30 Days");
+            //     break;
+            //     case 10:
+            //         console.log("Oct");
+            //         console.log("31 Days");
+            //     break;
+            //     case 11:
+            //         console.log("Nov");
+            //         console.log("30 Days");
+            //     break;
+            //     case 12:
+            //         console.log("Des");
+            //         console.log("31 Days");
+            //     break;
+            //     default :
+            //         console.log("Error");
+            // }
+
+
+            var n1=prompt("enter number");
+           var n2=prompt("enter number");
+           var n3=prompt("enter number");
+
+           if(n3>n1 && n2>n1){
+                if(n3>n2){
+                    console.log(n1,n2,n3);
+                    console.log(n3,n2,n1);
+                }else{
+                    console.log(n1,n3,n2);
+                }
+           }else if(n3>n2 && n1>n2){
+                     if(n3>n1){
+                          console.log(n2,n1,n3);
+                          console.log(n3,n1,n2);
+                     }else {
+                        console.log(n2,n3,n1);
+                     }
+           }else{
+            if(n2>n1){
+                   console.log(n3,n1,n2);
+                   console.log(n2,n1,n3);
+            }else{
+                console.log(n3,n2,n1);
+            }
+           }
+        </script>
+    </body>
+</html>
