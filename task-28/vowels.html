@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            // let name=prompt("enter your name");
+            // let prin=[];
+            
+            // for(i=0;i<=name.length;i++){
+            //     if(name[i]=="a" || name[i]=="e" || name[i]=="i" ||name[i]=="o" ||name[i]=="u"){
+            //         prin+=name[i];
+            //     }
+            // }
+            // console.log(prin);
+            
+            let input=prompt("enter your number");
+            let sum=0;
+            var value=input;
+            while(value>0){
+                remain=value%10;
+                value=(value-remain)/10;
+                sum=(sum*10)+remain;
+            }
+              if(input == sum){
+                console.log("It is palindromic number");
+              }
+              else{
+                console.log("It is not palindromic");
+              }
+              console.log(sum);
+        </script>
+    </body>
+</html>
