@@ -42,42 +42,58 @@
 
 
 
-        var a=parseInt(prompt("Enter the number"));
-		var b=parseInt(prompt("Enter the number"));
-		var ap=prompt("Enter the operator");
-        var p=0
+        // var a=parseInt(prompt("Enter the number"));
+		// var b=parseInt(prompt("Enter the number"));
+		// var ap=prompt("Enter the operator");
+        // var p=0
 		
-		function add(a,b){
-			return(a+b);
-		}
-		function sub(a,b){
-			return(a-b);
-		}
-		function mulp(a,b){
-			return(a*b);
-		}
-        function divi(a,b){
-			return(a/b);
-		}
-        function remain(a,b){
-			return(a%b);
-		}
-		if(ap=='+'){
-			add(a,b);
-		}
-		else if(ap=='-'){
-			sub(a,b);
-		}
-		else if(ap=='*'){
-			mulp(a,b);
-		}
-        else if(ap=='/'){
-			divi(a,b);
-		}
-        else if(ap=='%'){
-			remain(a,b);
-		}
-            document.write(p)
+		// function add(a,b){
+		// 	return(a+b);
+		// }
+		// function sub(a,b){
+		// 	return(a-b);
+		// }
+		// function mulp(a,b){
+		// 	return(a*b);
+		// }
+        // function divi(a,b){
+		// 	return(a/b);
+		// }
+        // function remain(a,b){
+		// 	return(a%b);
+		// }
+		// if(ap=='+'){
+		// 	add(a,b);
+		// }
+		// else if(ap=='-'){
+		// 	sub(a,b);
+		// }
+		// else if(ap=='*'){
+		// 	mulp(a,b);
+		// }
+        // else if(ap=='/'){
+		// 	divi(a,b);
+		// }
+        // else if(ap=='%'){
+		// 	remain(a,b);
+		// }
+        //     document.write(p)
+
+        var letter=prompt("enter your letters");
+        var cond=prompt("selected your letter");
+
+        var m=function5(letter,cond);
+
+        function function5(letter,cond){
+            sav=0;
+            for(i=0;i<letter.length;i++){
+               if(letter[i]== cond){
+                 sav+=1;
+               }
+            }
+            return sav
+        }
+          console.log(m);
         </script>
     </body>
 </html>
