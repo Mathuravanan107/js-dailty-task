@@ -4,23 +4,25 @@
 
     </head>
     <body>
-        <div id="color">
-            <h1 id="text">Mathuravanann</h1>
-         <select id="value" aria-placeholder="--Select your color--">
-            <option ></option>
+        <div>
+            <h1 id="text">Mathuravanan</h1>
+         <select id="value" aria-placeholder="">
+            <option >--Select your color--</option>
             <option value="red">red</option>
             <option value="blue">blue</option>
             <option value="green">green</option>
             <option value="yellow">yellow</option>
+            <option value="pink">pink</option>
+            <option value="white">white</option>
           </select>
           <button id="btn">Click Her</button>
         </div>
     </body>
     <script>
        let btn=document.getElementById("btn")
-       btn.addEventListener("click",myfun)
+       btn.addEventListener("click",fun2)
        
-       function myfun(){
+       function fun2(){
         let col=document.getElementById("text");
         let int=document.getElementById("value")
         col.style.color=int.value;
