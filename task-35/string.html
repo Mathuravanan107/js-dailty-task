@@ -5,10 +5,74 @@
     </head>
     <body>
         <script>
+            //Length
             var text="mathu,rupu,vel,pravin";
-               //console.log(text.length);
+            var len=text.length
+            document.write(len + "</br>");
+            
+            //slice
+            var a="mathu,rupu,vel,pravin";
+            var slice=a.slice(5,10)
+            document.write(slice + "</br>")
 
-               console.log(text.slice(7))
+            //substring
+            var b= "mathu,rupu,vel,pravin";
+            var substring=b.substring(-1,-3)
+            document.write(substring + "</br>")
+
+            //padend
+            var c= "m";
+            var padend=c.padEnd(3,'K')
+            document.write(padend + "</br>")
+
+            //padstart
+            var d= "m";
+            var padstart=c.padStart(3,'K')
+            document.write(padstart + "</br>")
+
+            //includes
+            var e= "mathu,rupu,vel,pravin";
+            var includes=e.includes("mthu")
+            document.write(includes + "</br>")
+
+            //trim
+            var f="   mathu   "
+            console.log(f);
+            var trim=f.trim()
+            document.write(trim + "</br>")
+
+            //startswith
+            var f="mathu"
+            var startswith=f.startsWith("a")
+            document.write(startswith + "</br>")
+
+            //valuesof
+            var g="dnkwcwc wecewc wecew"
+            var valuesof=g.valueOf()
+            console.log(valuesof  + "</br>")
+
+            //tostring
+            var  h= [1,2,3,4,5];
+            var string=h.toString()
+            console.log(string  + "</br>");
+
+            //charAt()
+            var i="mathu,rupu,vel,pravin";
+            var charat=i.charAt(3);
+            document.write(charat + "</br>")
+
+            //charCodeAt()
+            var l="mathu,rupu,vel,pravin";
+            var charcodeat=l.charCodeAt(2);
+            document.write(charcodeat+ "</br>");
+
+            //concat()
+            var m="mathu,rupu,vel,pravin";
+            var n=",padian"
+            let concat=m.concat(n);
+            document.write(concat+ "</br>");
+
+               
         </script>
     </body>
 </html>
