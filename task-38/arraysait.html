@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            lister=[11,5,-2,-3,0,1,4,7]
+           function ordre(lister){
+            var result=[];
+            for(i=0; i<lister.length; i++){
+              for(j=i; j<lister.length; j++){
+                if(lister[i]>lister[j]){
+                    result+=lister[j]
+                }
+              }
+            }
+            return result
+            }
+            console.log( lister );
+
+        </script>
+
+    </body>
+</html>
